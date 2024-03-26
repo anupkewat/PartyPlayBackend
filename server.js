@@ -424,9 +424,10 @@ app.get("/getplaylistitems", async (req, res) => {
 
 
 app.post("/createplaylist", async (req, res) => {
+
   try {
     // console.log(req)
-    console.log('@/createplaylist')
+    console.log('@/createplaylist' , req)
     const ownerName = req.body.ownerName; 
     const partyName = req.body.partyName;
     const playlistName = req.body.playlistName;
